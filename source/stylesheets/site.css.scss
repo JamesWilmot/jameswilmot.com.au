@@ -1,3 +1,11 @@
 @charset "utf-8";
 @import "normalize";
 
+.page#index {
+  .big_banner {
+    height: 85vh;
+    width: 100%;
+    background-image: url("/images/sydney-harbour-dusk.jpg");
+    background-position: right center;
+  }
+}
