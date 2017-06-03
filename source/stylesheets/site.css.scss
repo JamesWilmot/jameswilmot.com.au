@@ -1,11 +1,71 @@
 @charset "utf-8";
 @import "normalize";
 
-.page#index {
-  .big_banner {
-    height: 85vh;
-    width: 100%;
-    background-image: url("/images/index/sydney-harbour-dusk.jpg");
-    background-position: right center;
+body {
+  font-family: "Roboto";
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: "Roboto Condensed";
+}
+
+main {
+  width: 780px;
+  margin: 0 auto;
+  padding: 2em 2em;
+}
+
+article.about {
+  display: flex;
+  .content {
+    flex: 1;
   }
+  .sidepane {
+    flex: 0 0 200px;
+  }
+}
+
+.sidepane {
+  padding-top: 1.5em;
+  figure.headshot {
+    margin: 0;
+    img {
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  figcaption .title, .name {
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 1.35rem;
+  }
+
+  ul.profiles {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding-top: 0.15em;
+    }
+  }
+
+  .links {
+    margin-top: 1em;
+  }
+}
+
+.content {
+  padding: 3em;
+}
+
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
 }
