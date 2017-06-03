@@ -23,6 +23,15 @@ configure :development do
   activate :livereload
 end
 
+
+activate :blog do |blog|
+  blog.prefix = "technology"
+  blog.name = "technology"
+  blog.layout = "technology"
+  blog.sources = "{title}-{year}-{month}-{day}.html"
+end
+
+
 ###
 # Helpers
 ###
